@@ -1,0 +1,44 @@
+<Project>
+  <Name>Calculadora de Matrices</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>Calculadora de Matrices</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>Matrix</Name>
+        <Access>Public</Access>
+        <Location left="51" top="29" />
+        <Size width="382" height="519" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">double[,] _dblElementos</Member>
+        <Member type="Field">int _intNumeroFilas</Member>
+        <Member type="Field">int _intNumeroColumnas</Member>
+        <Member type="Field">double[,] _dblInversa</Member>
+        <Member type="Field">double[,] _dblTranspuesta</Member>
+        <Member type="Field">double[,] _dblCofactores</Member>
+        <Member type="Property">public double[,] Elementos { get; set; }</Member>
+        <Member type="Property">public int NumeroFilas { get; }</Member>
+        <Member type="Property">public int NumeroColumnas { get; }</Member>
+        <Member type="Property">public double Determinante { get; }</Member>
+        <Member type="Property">public double[,] Inversa { get; }</Member>
+        <Member type="Property">public double[,] Transpuesta { get; }</Member>
+        <Member type="Property">public double[,] Cofactores { get; }</Member>
+        <Member type="Method">private double[,] ObtenerInversa()</Member>
+        <Member type="Method">private double[,] ObtenerTranspuesta(double[,] Elementos)</Member>
+        <Member type="Method">private double[,] ObtenerCofactores()</Member>
+        <Member type="Method">private double ObtenerDeterminante()</Member>
+        <Member type="Method">private double MetodoGauss()</Member>
+        <Member type="Method">private double MetodoSarrus()</Member>
+        <Member type="Method">public double[,] Sumar(Matrix Matriz)</Member>
+        <Member type="Method">public double[,] Restar(Matrix Matriz)</Member>
+        <Member type="Method">public double[,] Elevar(int Exponente)</Member>
+        <Member type="Method">public double[,] Multiplicar(Matrix Matriz)</Member>
+        <Member type="Method">public double[,] Multiplicar(double dblMultiplo)</Member>
+        <Member type="Constructor">public Matrix(double[,] dblElementos, int NumeroFilas, int NumeroColumnas)</Member>
+        <Member type="Destructor">~Matrix()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+    </Entities>
+    <Relationships />
+  </ProjectItem>
+</Project>
